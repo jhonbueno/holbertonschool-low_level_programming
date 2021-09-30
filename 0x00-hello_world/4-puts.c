@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main: puts string
+ * Return: return 0
  */
 
 int main(void)

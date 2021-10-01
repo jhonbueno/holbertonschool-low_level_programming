@@ -4,7 +4,7 @@
 
 /**
  * main - Main function
- * 
+ *
  *
  * Return: 0
  */
@@ -22,7 +22,7 @@ int main(void)
 
 	last_digit = n % 10;
 
-	string caso[50];
+	char caso[50];
 
 	    switch (n)
 	    {

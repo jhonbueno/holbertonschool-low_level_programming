@@ -15,8 +15,6 @@ int main(void)
 
 	int last_digit;
 
-	char caso[50];
-
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
@@ -25,20 +23,19 @@ int main(void)
 	last_digit = n % 10;
 
 
-	    switch (n)
-	    {
-		case n > 5:
-			caso = "and is greater than 5";
+	if (last_digit > 5)
+	{
+		printf("Last digit of %d and is greater than 5", last_digit);
+	}
 
-		case n == 0:
-			caso = "and is 0";
+	else if (last_digit == 0)
+	{
+		printf("Last digit of %d and is 0", last_digit);
+	}
+	else if (last_digit < 6 && last_digit != 0)
+	{
+		printf("Last digit of %d and is less than 6 and not 0", last_digit);
+	}
 
-		case n < 6 && n != 0:
-			caso = "and is less than 6 and not 0";
-
-	    }
-
-	    printf("Last digit of %d %s", n, caso);
-
-	    return (0);
+	return (0);
 }

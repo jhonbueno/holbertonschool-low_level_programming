@@ -13,30 +13,28 @@ int main(void)
 {
 	int n;
 
+	int last_digit;
+
+	char caso[50];
+
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 
-	int last_digit;
-
 	last_digit = n % 10;
 
-	char caso[50];
 
 	    switch (n)
 	    {
 		case n > 5:
-
-		caso = "and is greater than 5";
+			caso = "and is greater than 5";
 
 		case n == 0:
-
-		caso = "and is 0";
+			caso = "and is 0";
 
 		case n < 6 && n != 0:
-
-		caso = "and is less than 6 and not 0";
+			caso = "and is less than 6 and not 0";
 
 	    }
 

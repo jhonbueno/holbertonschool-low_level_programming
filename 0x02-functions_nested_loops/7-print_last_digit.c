@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _print_last_digit - Print last digit
+ * print_last_digit - Print last digit
  * @n: parameter n
  *
  * Return: last digit
  */
 
-int _print_last_digit(int n)
+int print_last_digit(int n)
 {
 	int last_digit;
 

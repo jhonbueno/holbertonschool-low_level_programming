@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * _putchar - Print _putchar
- * @c: The character to print
+ * main - Print _putchar
+ * 
  *
  * Return: 0
  */

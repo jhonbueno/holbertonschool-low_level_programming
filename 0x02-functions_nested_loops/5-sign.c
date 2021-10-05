@@ -2,7 +2,7 @@
 
 /**
  * print_sign - print sign
- * @c: Character to print
+ * 
  *
  * Return: 1 or 0
  */

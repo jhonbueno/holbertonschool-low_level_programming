@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - Print hours
- * 
+ *
  *
  * Return: 0
  */
@@ -11,7 +11,7 @@ void jack_bauer(void)
 {
 	int h, m;
 
-	for (h = 00; h <= 23; t++)
+	for (h = 00; h <= 23; h++)
 	{
 		for (m = 00; m <= 59; m++)
 		{

@@ -19,7 +19,7 @@ void times_table(void)
 			d1 = m / 10;
 			d2 = m % 10;
 
-                        if (m == d2)
+			if (m == d2)
 				_putchar(d2 + '0');
 			else
 			{
@@ -30,6 +30,7 @@ void times_table(void)
 			if (c < 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 			else if (c == 9)

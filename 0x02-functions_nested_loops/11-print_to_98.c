@@ -1,16 +1,19 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * add - Sum a + b
+ * print_to_98 - Print numbers between n and 98
  * @n: Number
  *
- * Return: sum
  */
 
-void(int n)
+void print_to_98(int n)
 {
 	int num;
 
 	for (num = n; n <= 98; num++)
-		return (num);
+	{
+		printf("%d", num);
+		if (num < 98)
+			printf(", ");
 }

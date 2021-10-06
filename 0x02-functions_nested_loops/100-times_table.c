@@ -18,14 +18,14 @@ void print_times_table(int n)
 			for (c = 0; c <= n; c++)
 			{
 				m = r * c;
-				d1 = m / 100;
-				d2 = (m / 10) % 10;
-				d3 = m % 10;
+				d1 = m / 100; /*primer digito de 3*/
+				d2 = (m / 10) % 10; /* 2 digito de 3 */
+				d3 = m % 10; /* ultimo digito */
 
 				if (m == d3)
 					_putchar(m + '0');
 
-				else if (m == d2)
+				else if ((m % 100) == 0 )
 				{
 					_putchar((m / 10) + '0');
 					_putchar(d3 + '0');

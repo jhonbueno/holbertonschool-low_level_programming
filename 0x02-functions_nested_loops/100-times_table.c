@@ -27,7 +27,7 @@ void print_times_table(int n)
 
 				else if (m == d2)
 				{
-					_putchar((m /10) + '0');
+					_putchar((m / 10) + '0');
 					_putchar(d3 + '0');
 				}
 				else
@@ -45,8 +45,8 @@ void print_times_table(int n)
 						_putchar(' ');
 				}
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 
 }

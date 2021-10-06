@@ -31,15 +31,11 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
+				if (m == d2)
+					_putchar(' ');
 			}
-			/*else if (c == 9)
-				_putchar('$');
-			*/
-
 		}
 		_putchar('\n');
-
 	}
 
 }

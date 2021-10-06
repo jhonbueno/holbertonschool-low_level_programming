@@ -26,6 +26,8 @@ void times_table(void)
 				}
 				else if (c == 9)
 					_putchar('$');
+
+				_putchar('\n');
 			}
 
 			else if (r == 1)
@@ -42,6 +44,7 @@ void times_table(void)
 					else if (i == 9)
 						_putchar('$');
 				}
+				_putchar('\n');
 			}
 			else
 			{
@@ -63,13 +66,13 @@ void times_table(void)
 					}
 					else if (c == 9)
 						_putchar('$');
+					_putchar('\n');
 				}
 			}
 
 
 		}
 
-		_putchar('\n');
 	}
 
 }

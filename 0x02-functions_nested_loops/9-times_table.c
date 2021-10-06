@@ -25,7 +25,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 				else if (c == 9)
-					_putchar('$')
+					_putchar('$');
 			}
 
 			else if (r == 1)

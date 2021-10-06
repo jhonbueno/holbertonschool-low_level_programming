@@ -15,14 +15,14 @@ void times_table(void)
 	{
 		for (c = 0; c <= 9; c++)
 		{
-			if (r == 0 && r == 1)
-				_putchar(c + '0');
+			m = r * c;
+			d1 = m / 10;
+			d2 = m % 10;
+
+                        if (d2 == r)
+				_putchar(r + '0');
 			else
 			{
-				m = r * c;
-				d1 = m / 10;
-				d2 = m % 10;
-
 				_putchar(d1 + '0');
 				_putchar(d2 + '0');
 			}

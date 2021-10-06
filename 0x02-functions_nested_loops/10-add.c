@@ -2,7 +2,8 @@
 
 /**
  * add - Sum a + b
- *
+ * @a: First operand
+ * @b: Second operand
  *
  * Return: sum
  */

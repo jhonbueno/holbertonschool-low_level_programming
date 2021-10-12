@@ -2,7 +2,7 @@
 
 /**
  * reset_to_98 - Print n times table
- * @n: number 
+ * @n: number
  *
  * Return: 0
  */

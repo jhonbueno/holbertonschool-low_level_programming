@@ -11,7 +11,9 @@ void rev_string(char *s)
 {
 	int i, j, k;
 	char *str = s;
+	char tempstr;
 
+	tempstr = str;
 	i = 0;
 	k = 0;
 
@@ -22,7 +24,7 @@ void rev_string(char *s)
 
 	for (j = i - 1; j  >=  0; j--)
 	{
-		s[k] = *str[j];
+		s[k] = tempstr[j];
 		k++;
 	}
 }

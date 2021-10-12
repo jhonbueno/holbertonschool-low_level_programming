@@ -13,7 +13,7 @@ void rev_string(char *s)
 	char *str = s;
 	char tempstr;
 
-	tempstr = str;
+	*tempstr = str;
 	i = 0;
 	k = 0;
 

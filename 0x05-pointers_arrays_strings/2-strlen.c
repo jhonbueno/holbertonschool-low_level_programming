@@ -3,7 +3,7 @@
 /**
  * _strlen - Swapt the values
  * @s: Char
- * 
+ *
  * Return: 0
  */
 

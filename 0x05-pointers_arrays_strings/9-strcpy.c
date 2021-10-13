@@ -11,15 +11,15 @@
 char *_strcpy(char *dest, char *src)
 {
 	int i, j;
-	char str[1000];
 
 	i = 0;
-	*str = *dest
+	j = _strlen(src)
 
-	while(src[i] != '\0')
+	while (i <= j)
+	{
+		dest[i] = src[i];
 		i++;
-	for (j = 0; j <= i; j++)
-		str[j] = src[j];
+	}
 
-	return (*str);
+	return (*dest);
 }

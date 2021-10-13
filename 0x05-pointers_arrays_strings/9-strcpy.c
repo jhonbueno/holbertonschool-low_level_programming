@@ -13,8 +13,6 @@ char *_strcpy(char *dest, char *src)
 	int i, j;
 	char str[1000];
 
-	*str = *dest;
-
 	i = 0;
 
 	while(src[i] != '\0')
@@ -22,5 +20,5 @@ char *_strcpy(char *dest, char *src)
 	for (j = 0; j <= i; j++)
 		str[j] = src[j];
 
-	return (*dest);
+	return (*dest = str);
 }

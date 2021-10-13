@@ -25,5 +25,4 @@ void rev_string(char *s)
 		str[k] = s[j];
 		k++;
 	}
-	*s = str
 }

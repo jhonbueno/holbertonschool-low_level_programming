@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcpy - print string
@@ -11,8 +10,15 @@
 
 char *_strcpy(char *dest, char *src)
 {
+	int i, j;
+	char *dest[1000];
 
-	*dest = *src;
+	i = 0;
+
+	while(src[i] != '\0')
+		i++;
+	for (j = 0; i <= i, j++)
+		dest[j] = src[j];
 
 	return (*dest);
 }

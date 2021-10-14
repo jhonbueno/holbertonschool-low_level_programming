@@ -31,7 +31,7 @@ char *_strncpy(char *dest, char *src, int n)
 		dest[k] = src[k];
 		k++;
 	}
-	if (j > n)
+	if (j > k && i < n)
 	{
 		while (k < j)
 		{

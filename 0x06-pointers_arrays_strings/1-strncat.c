@@ -4,6 +4,7 @@
  * _strncat - print string
  * @dest: char
  * @src: char
+ * @n: size
  *
  * Return: char
  */

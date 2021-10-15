@@ -22,7 +22,7 @@ void reverse_array(int *a, int n)
 		j++;
 	}
 
-	for (k = 0; k <= n; k++)
+	for (k = 0; k < n; k++)
 	{
 		a[k] = a2[k];
 	}

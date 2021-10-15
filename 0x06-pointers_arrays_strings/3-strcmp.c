@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strcmp - print string
  * @s1: char
@@ -7,7 +9,7 @@
  * Return: int
  */
 
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i, j, k, l, r;
 
@@ -28,12 +30,13 @@ int *_strcmp(char *s1, char *s2)
 
         for (l = 0; l < k; l++)
         {
-		if (s1[l] != s2[l])
+		r = s1[l] - s2[l];
+
+		if (r != 0)
 		{
-			r = s1[l] - s2[l];
 			return (r);
 		}
         }
-	r = s1[l] - s2[l];
+
 	return (r);
 }

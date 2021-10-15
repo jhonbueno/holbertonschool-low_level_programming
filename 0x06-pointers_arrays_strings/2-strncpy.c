@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 
 	while (src[i] != '\0')
 		i++;
-	while (dest[j] !='\0')
+	while (dest[j] != '\0')
 		j++;
 	if (n > i)
 	{

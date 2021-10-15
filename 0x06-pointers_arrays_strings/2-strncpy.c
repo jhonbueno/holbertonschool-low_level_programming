@@ -37,7 +37,7 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	else
 	{
-		while (k <= n)
+		while (k < n)
 		{
 			dest[k] = src[k];
 			k++;

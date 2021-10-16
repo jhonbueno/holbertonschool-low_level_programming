@@ -6,7 +6,6 @@
  * @str: char
  *
  *
- *
  * Return: char
  */
 

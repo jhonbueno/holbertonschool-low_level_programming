@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * leet - leet encoding
@@ -29,7 +28,6 @@ char *leet(char *str)
 				k++;
 			}
 		}
-		str[i] = tolower(str[i]);
 		i++;
 		k = 0;
 	}

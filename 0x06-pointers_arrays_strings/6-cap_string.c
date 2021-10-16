@@ -20,6 +20,9 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 		i++;
+	if (str[0] != '\0')
+	{
+		str[
 	for (j = 0; j <= i; j++)
 	{
 		if (str[j] >= 'A' && str[j] <= 'Z')
@@ -38,6 +41,7 @@ char *cap_string(char *str)
 					str[j + 1] = toupper(str[j + 1]);
 			}
 		}
+	}
 	}
 	return (str);
 }

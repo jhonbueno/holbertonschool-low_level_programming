@@ -1,6 +1,16 @@
 #include "main.h"
 #include <ctype.h>
 
+/**
+ * cap_string - Capitalize
+ * @str: char
+ *
+ *
+ *
+ * Return: char
+ */
+
+
 char *cap_string(char *str)
 {
 	int i, j, k;
@@ -21,6 +31,7 @@ char *cap_string(char *str)
 					str[j + 1] = toupper(str[j + 1]);
 			}
 		}
-		return (str);
 	}
+
+	return (str);
 }

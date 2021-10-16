@@ -39,8 +39,5 @@ char *cap_string(char *str)
 			}
 		}
 	}
-	if (str[0] == "")
-		return(str[0]);
-	else
-		return (str);
+	return (str);
 }

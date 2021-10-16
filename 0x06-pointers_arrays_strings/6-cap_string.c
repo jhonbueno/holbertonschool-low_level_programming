@@ -21,7 +21,7 @@ char *cap_string(char *str)
 
 	while (str[i] != '\0')
 		i++;
-	for (j = 0; j <= i; j++)
+	for (j = 0; j < i; j++)
 	{
 		for (k = 0 ;  k < 13 ; k++)
 		{

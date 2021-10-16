@@ -25,7 +25,7 @@ char *cap_string(char *str)
 	{
 		for (k = 0 ;  k < 12 ; k++)
 		{
-			if (str[j] == sep[k] && str[j + 1] != sep[k + 1])
+			if (str[j] == sep[k])
 			{
 				if (str[j + 1] >= 'a' && str[j + 1] <= 'z')
 					str[j + 1] = toupper(str[j + 1]);

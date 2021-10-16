@@ -23,7 +23,7 @@ char *cap_string(char *str)
 		i++;
 	for (j = 0; j < i; j++)
 	{
-		for (k = 0 ;  k < 13 ; k++)
+		for (k = 0 ;  k < 12 ; k++)
 		{
 			if (str[j] == sep[k] && str[j + 1] != sep[k + 1])
 			{

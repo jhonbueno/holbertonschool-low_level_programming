@@ -26,7 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (k = 0; k <= i; k++)
 		{
-			if (accept[j] == s[k])
+			if (accept[k] == s[j])
 				count++;
 		}
 	}

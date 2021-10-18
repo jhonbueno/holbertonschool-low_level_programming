@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strsnp - copies memory area
+ * _strspn - copies memory area
  * @s: char
  * @accept: char
  *

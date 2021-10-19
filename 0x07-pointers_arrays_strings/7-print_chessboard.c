@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _print_chessboard - copies memory area
+ * print_chessboard - copies memory area
  * @a: char
- * 
+ *
  * Return: 0
  */
 

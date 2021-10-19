@@ -1,8 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - copies memory area
- * @a: char
+ * @a: Int
+ * @size: size
  *
  * Return: 0
  */

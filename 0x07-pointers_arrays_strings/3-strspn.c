@@ -27,15 +27,15 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (k = 0; k <= i; k++)
 		{
-			if (S[j] == accept[k])
+			if (s[j] == accept[k])
 			{
 				count++;
-				flag =1;
+				flag = 1;
 				break;
 			}
+			else
+				flag = 0;
 		}
-		else
-			flag = 0;
 	}
 	return (count);
 }

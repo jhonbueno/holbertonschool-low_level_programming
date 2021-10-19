@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _strpbrk - copies memory area
- * @s: char
- * @accept: char
+ * _strstr - copies memory area
+ * @haystack: char
+ * @needle: char
  *
  * Return: char
  */
@@ -31,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*b == 0)
 			{
-				return haystack;
+				return (haystack);
 			}
 			if (*a++ != *b++)
 			{
@@ -40,5 +40,5 @@ char *_strstr(char *haystack, char *needle)
 		}
 		b = needle;
 	}
-	return NULL;
+	return (NULL);
 }

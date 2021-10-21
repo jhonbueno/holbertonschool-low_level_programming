@@ -22,7 +22,7 @@ int palindrome(char *s, char *b, int half)
 	{
 		return (1);
 	}
-	return (palindrome(s + 1 , b - 1, half - 1));
+	return (palindrome(s + 1, b - 1, half - 1));
 }
 
 /**
@@ -32,7 +32,7 @@ int palindrome(char *s, char *b, int half)
  * Return: int
  */
 
-int is_palindrome(int n)
+int is_palindrome(char *s)
 {
 	int half;
 	char *b = s;

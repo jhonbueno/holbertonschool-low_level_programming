@@ -1,6 +1,33 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+
+/**
+ * check_digit - Check if there is not digit
+ *
+ * @a: array
+ *
+ * Return: integer
+ */
+
+int check_digit(char a[])
+{
+	int i, len;
+
+	len = strlen(a);
+
+	for (i = 0; i < len; i++)
+	{
+		if (!isdigit(a[i]))
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
+
 
 /**
  * main - print the name of the program
@@ -21,7 +48,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]))
+			if (check_digit(argv[i]))
 			{
 				result += atoi(argv[i]);
 			}

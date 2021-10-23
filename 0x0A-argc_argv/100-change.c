@@ -21,13 +21,11 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 		if (atoi(argv[1]) < 0)
-		{
 			printf("%d\n", 0);
-		}
 		else
 		{
 			cents = atoi(argv[1]);
-			
+
 			for (i = 0; i < 5; i++)
 			{
 				if (cents >= denom[i])

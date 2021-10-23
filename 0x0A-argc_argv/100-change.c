@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 					{
 						coins +=  cents / denom[i];
 						printf("%d\n", coins);
-						return (1);
+						return (0);
 					}
 					else
 					{
@@ -51,5 +51,5 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	return (EXIT_SUCCESS);
+	return (0);
 }

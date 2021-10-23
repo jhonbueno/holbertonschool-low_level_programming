@@ -13,10 +13,15 @@
 
 int main(int argc, char *argv[])
 {
-	if (strlen(*argv) > 0)
+	int i, count;
+
+	count = 0;
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("%d\n", argc);
-		return (0);
+		if (argv[i])
+			count++;
 	}
+	printf("%d\n", count);
 	return (0);
 }

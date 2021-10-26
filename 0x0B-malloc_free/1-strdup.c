@@ -21,6 +21,8 @@ char *_strdup(char *str)
 
 	if (s == NULL || str == NULL)
 		return (NULL);
+	else
+		len = strlen(str);
 
 	for (i = 0; i < len; i++)
 		s[i] = str[i];

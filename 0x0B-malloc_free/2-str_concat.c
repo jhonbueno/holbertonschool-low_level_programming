@@ -23,8 +23,10 @@ char *str_concat(char *s1, char *s2)
 
 	if (s == NULL)
 		return (NULL);
-	if (s1 == NULL || s2 == NULL)
-		s[0] = '\0';
+	if (s1 == NULL)
+		s1 = '\0';
+	if (s2 == NULL)
+		s2[0] = '\0';
 	for (i = 0; i < len1; i++)
 	{
 		s[i] = s1[i];

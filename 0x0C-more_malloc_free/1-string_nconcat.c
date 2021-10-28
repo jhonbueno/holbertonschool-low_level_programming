@@ -7,7 +7,7 @@
  * string_nconcat - concatenate 2 strings
  * @s1: string 1
  * @s2: string 2
- * @n; int
+ * @n: int
  *
  * Return: char
  */

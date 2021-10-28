@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * free_grid - free 2 dimensional array
+ * malloc-checked - free 2 dimensional array
  * @b: int
  * 
  *

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * malloc-checked - free 2 dimensional array
+ * malloc_checked - free 2 dimensional array
  * @b: int
  *
  *

@@ -29,6 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = malloc(sizeof(*s) * 1);
 		*s2 = '\0';
+		n = 1;
 	}
 
 	len1 = strlen(s1);

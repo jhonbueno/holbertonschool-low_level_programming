@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
- * malloc_checked - free 2 dimensional array
+ * malloc_checked - malloc
  * @b: int
- *
  *
  * Return: pointer
  */

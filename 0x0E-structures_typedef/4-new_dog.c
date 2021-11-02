@@ -4,7 +4,9 @@
 
 /**
  * new_dog - print dog
- * @d: dog
+ * @name: name
+ * @age: age
+ * @owner: owner
  *
  *
  * Return: 0
@@ -12,9 +14,9 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *dog1;
+	dog_t *dog1;
 
-	dog1 = malloc(sizeof(struct dog));
+	dog1 = malloc(sizeof(dog_t));
 	if (dog1 == NULL)
 		return (NULL);
 	dog1->name = name;

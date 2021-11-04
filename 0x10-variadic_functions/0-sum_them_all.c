@@ -1,26 +1,28 @@
+#include <stdarg.h>
+
 /**
  * sum_them_all - sum arguments
  * @array: array
- * 
- * 
+ *
  *
  * Return: integer
  */
 
 int sum_them_all(const unsigned int n, ...)
 {
-	if (array && cmp)
-	{
-		int i;
+	va_list ap;
+	unsigned int i;
+	int sum;
 
-		if (size <= 0)
-			return (-1);
+	sum = 0;
 
-		for (i = 0; i < size; i++)
-		{
-			if (cmp(array[i]))
-				return (i);
-		}
-	}
-	return (-1);
+	if (n == 0)
+		return (0);
+
+	va_start (ap, n);
+
+	for (i = 0; i < n; i++)
+		sum += va_arg(ap, int);
+	va_end(ap);
+	return (sum);
 }

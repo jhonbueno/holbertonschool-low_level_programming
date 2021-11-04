@@ -1,3 +1,5 @@
+#include <stdlib.h>
+
 /**
  * array_iterator - Array iterator
  * @array: array

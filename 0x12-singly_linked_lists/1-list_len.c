@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * print_list - singly linked list
+ * list_len - return list lenght
  * @h: list_t list
  *
  *

@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * add_node - return list lenght
+ * add_node_end - add node end
  * @head: list_t list
  * @str: string
  *

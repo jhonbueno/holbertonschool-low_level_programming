@@ -19,6 +19,7 @@ void free_list(list_t *head)
 	while (head != NULL)
 	{
 		tmp = head;
+		free(tmp->str);
 		head = head->next;
 		free(tmp);
 	}

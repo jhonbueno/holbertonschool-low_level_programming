@@ -19,7 +19,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	current = *head;
 
-	new_node = malloc(sizeof(list_t));
+	new_node = (list_t *) malloc(sizeof(list_t));
 
 	if (new_node == NULL || !strdup(str))
 	{
@@ -41,5 +41,5 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	current->next = new_node;
 
-	return (new_node);
+	return (current->next);
 }

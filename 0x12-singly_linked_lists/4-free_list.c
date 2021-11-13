@@ -4,41 +4,22 @@
 #include <stdlib.h>
 
 /**
- * add_node_end - add node end
+ * free_list - free list
  * @head: list_t list
- * @str: string
  *
  *
  *
- * Return: size_t
+ * Return: none
  */
 
-list_t *add_node_end(list_t **head, const char *str)
+void free_list(list_t *head)
 {
-	list_t *new_node, *current;
+	list_t *tmp;
 
-	new_node = malloc(sizeof(list_t));
-	if (new_node == NULL)
+	while (head != NULL)
 	{
-		free(new_node);
-		return (NULL);
+		tmp = head;
+		head = head->next;
+		free(tmp);
 	}
-
-	new_node->str = strdup(str);
-	new_node->len = strlen(str);
-	new_node->next = NULL;
-
-	if (*head == NULL)
-	{
-		*head = new_node;
-	} else
-	{
-		current = *head;
-		while (current->next != NULL)
-		{
-			current = current->next;
-		}
-		current->next = new_node;
-	}
-	return (new_node);
 }

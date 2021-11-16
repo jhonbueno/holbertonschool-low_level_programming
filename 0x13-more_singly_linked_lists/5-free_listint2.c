@@ -1,23 +1,21 @@
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "lists.h"
-#include <string.h>
-#include <stdlib.h>
 
 /**
- * free_listint2 - free list
- * @head: list_t list
+ * free_listint2 - free a list
+ * @head: pointer to list
  *
- *
- *
- * Return: none
+ * Return: void
  */
-
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
 
 	if (head == NULL)
 		return;
+
 	tmp = *head;
 
 	while (tmp != NULL)

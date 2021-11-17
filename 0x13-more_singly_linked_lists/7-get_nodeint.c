@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * pop_listint - free a list
+ * get_nodeint_at_index - get node
  * @head: pointer to list
  * @index: integer
  *
@@ -20,7 +20,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 	for (i = 0; i < index; i++)
 	{
-		if (tmp->next == NULL)
+		if (!tmp->next)
 			return (NULL);
 		tmp = tmp->next;
 	}

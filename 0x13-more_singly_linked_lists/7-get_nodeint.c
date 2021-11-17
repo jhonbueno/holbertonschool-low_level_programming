@@ -6,21 +6,23 @@
 /**
  * pop_listint - free a list
  * @head: pointer to list
+ * @index: integer
  *
- * Return: void
+ * Return: listint_t
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int retval = -1;
-	int i = 0;
+	listing_t *tmp;
+	unsigned int i = 0;
 
-	for (i = 0; i <= index; i++)
+	tmp = head;
+
+	for (i = 0; i < index; i++)
 	{
-		head = head->next;
+		if (tmp->next == NULL)
+			return (NULL);
+		tmp = tmp->next;
 	}
-
-	retval = head->n;
-
-	return (retval);
+	return (tmp);
 }

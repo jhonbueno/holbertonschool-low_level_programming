@@ -41,21 +41,22 @@ int _pow_recursion(int x, int y)
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int i, dec, len;
-	int j, k = 0;
+	int l, j, k = 0;
 
 	dec = 0;
-	len = strlen(b);
 
 	if (b == NULL)
 		return (0);
 
-	for (i = 0; i < len; i++)
+	while(b[l] != '0')
+		l++;
+	for (i = 0; i < l; i++)
 	{
 		if (!isdigit(b[i]))
 			return (0);
 	}
 
-	for (j = len - 1; j >= 0; j--)
+	for (j = l - 1; j >= 0; j--)
 	{
 		if (b[j] == '0')
 			dec = dec + 0;

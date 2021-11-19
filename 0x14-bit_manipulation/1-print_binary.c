@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * print_binary - print binary
+ *
+ * @n: integer number
+ *
+ * Return: unsigned integer
+ */
+
 void print_binary(unsigned long int n)
 {
 	unsigned long int b = n;

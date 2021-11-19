@@ -2,7 +2,32 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <math.h>
+
+/**
+ * _pow_recursion - puts reverse
+ * @x: int
+ * @y: int
+ *
+ *
+ * Return: integer
+ */
+
+int _pow_recursion(int x, int y)
+{
+	int power = 1;
+
+	if (y < 0)
+	{
+		return (-1);
+	}
+	if (y == 0)
+	{
+		return (1);
+	}
+
+	power = x * _pow_recursion(x, (y - 1));
+		return (power);
+}
 
 
 /**
@@ -15,27 +40,28 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int number = 0;
-	unsigned int i, j, mod, dec;
+	unsigned int i, dec, len;
+	int j, k = 0;
 
 	dec = 0;
+	len = strlen(b);
 
 	if (b == NULL)
 		return (0);
 
-	for (i = 0; i < strlen(b); i++)
+	for (i = 0; i < len; i++)
 	{
 		if (!isdigit(b[i]))
 			return (0);
 	}
 
-	number = atoi(b);
-
-	for (j = 0; j < strlen(b); j++)
+	for (j = len - 1; j >= 0; j--)
 	{
-		mod = number % 10;
-		dec = dec + (pow(2, j) * mod);
-		number = number / 10;
+		if (b[j] == '0')
+			dec = dec + 0;
+		else
+			dec = dec + (_pow_recursion(2, k));
+		k++;
 	}
 
 	return (dec);

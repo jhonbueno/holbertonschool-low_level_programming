@@ -16,9 +16,9 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int number = 0;
-	unsigned int i, j, mod, bin;
+	unsigned int i, j, mod, dec;
 
-	bin = 0;
+	dec = 0;
 
 	if (b == NULL)
 		return (0);
@@ -34,10 +34,10 @@ unsigned int binary_to_uint(const char *b)
 	for (j = 0; j < strlen(b); j++)
 	{
 		mod = number % 10;
-		bin = bin + (pow(2, j) * mod);
+		dec = dec + (pow(2, j) * mod);
 		number = number / 10;
 	}
 
-	return (bin);
+	return (dec);
 
 }

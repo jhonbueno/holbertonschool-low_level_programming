@@ -41,15 +41,16 @@ unsigned int binary_to_uint(const char *b)
 	int j, k = 0;
 
 	dec = 0;
+	l = 0;
 
 	if (!b)
 		return (0);
 
-	while(b[l] != '\0')
+	while(b[l])
 		l++;
 	for (i = 0; i < l; i++)
 	{
-		if (b[i] != '0' || b[i] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 	}
 

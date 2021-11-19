@@ -10,32 +10,14 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int i, l, dec;
-	int j, k = 0;
+	unsigned long int bin = 0;
 
-	dec = 0;
-	l = 0;
-
-	if (!b)
-		return (0);
-
-	while (b[l])
-		l++;
-	for (i = 0; i < l; i++)
+	if (n == 0)
+		return;
+	else
 	{
-		if (b[i] != '0' && b[i] != '1')
-			return (0);
+		bin = n % 2;
+		print_binary(n / 2);
+		_putchar(bin);
 	}
-
-	for (j = l - 1; j >= 0; j--)
-	{
-		if (b[j] == '0')
-			dec = dec + 0;
-		else
-			dec = dec + (_pow_recursion(2, k));
-		k++;
-	}
-
-	return (dec);
-
 }

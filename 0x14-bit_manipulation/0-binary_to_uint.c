@@ -1,7 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
 
 /**
  * _pow_recursion - puts reverse

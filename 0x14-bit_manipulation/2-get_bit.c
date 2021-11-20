@@ -22,7 +22,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		n2 >>= 1;
 		i++;
 	}
-	if (index > i - 1)
+	if (index > i)
 		return (-1);
 
 	if (1 & (n >> index))

@@ -40,7 +40,7 @@ int create_file(const char *filename, char *text_content)
 			close(fd);
 			return (1);
 		}
-		text = write(STDOUT_FILENO, text_content, strlen(text_content));
+		text = write(fd, text_content, strlen(text_content));
 		close(fd);
 
 		if (text == -1)

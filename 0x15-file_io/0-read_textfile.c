@@ -45,7 +45,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		buf[nr_bytes] = '\0';
 		text = write(STDOUT_FILENO, buf, nr_bytes);
 		close(fd);
-		if (text == -1 || text != nr_bytes)
+		if (text == -1 || text != letters)
 		{
 			free(buf);
 			return (0);

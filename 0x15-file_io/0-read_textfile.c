@@ -38,8 +38,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		if (nr_bytes == 0)
 			return (0);
-		else
-			printf("%s", buf);
+		printf("%s", buf);
 	}
 	return (nr_bytes);
 }

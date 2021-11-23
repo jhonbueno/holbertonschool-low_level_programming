@@ -20,7 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char *buf;
-	ssize_t nr_bytes;
+	int nr_bytes, text;
 
 	buf = malloc(sizeof(buf) * letters);
 	if (filename == NULL)
@@ -35,10 +35,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	else
 	{
 		nr_bytes = read(fd, buf, letters);
-		close(fd);
 		if (nr_bytes == 0)
 			return (0);
-		printf("%s", buf);
+		buf[nr_bytes] = '\0';
+		text = write(STDOUT_FILENO, buf, nr_bytes);
+		close(fd);
+		if (text == -1)
+			return (0);
 	}
-	return (nr_bytes);
+	return (text);
 }

@@ -24,16 +24,18 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	fd = creat(filename, 0600);
+
+	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (fd == -1)
 	{
+		close(fd);
 		return (-1);
 	}
 
 	else
 	{
-		if (!text_content)
+		if (text_content == NULL)
 		{
 			close(fd);
 			return (1);

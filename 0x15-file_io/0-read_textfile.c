@@ -43,8 +43,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		}
 		buf[nr_bytes] = '\0';
-		text = write(STDOUT_FILENO, buf, nr_bytes);
 		close(fd);
+		text = write(STDOUT_FILENO, buf, nr_bytes);
 		if (text == -1)
 		{
 			free(buf);
